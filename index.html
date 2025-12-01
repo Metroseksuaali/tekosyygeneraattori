@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+    Tekosyygeneraattori
+    Copyright (c) 2025
+
+    Tämä projekti on suojattu tekijänoikeudella.
+    Katso LICENSE-tiedosto käyttöoikeuksista ja rajoituksista.
+    Julkinen hostaaminen ja kaupallinen käyttö vaativat luvan.
+-->
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekosyygeneraattori</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tekosyygeneraattori</h1>
+        <p class="subtitle">Tarvitsetko uskottavan selityksen? Paina nappia!</p>
+
+        <div class="tekosyy-box">
+            <p id="tekosyy" class="tekosyy-text" aria-live="polite" aria-atomic="true">Paina nappia saadaksesi tekosyyn...</p>
+        </div>
+
+        <button id="generoi-btn" type="button" class="generoi-nappi">Anna tekosyy</button>
+
+        <!-- Ehdota uutta tekosyytä -osio -->
+        <div class="ehdotus-osio">
+            <h2>Ehdota uutta tekosyytä</h2>
+            <p class="ehdotus-ohje">
+                Onko sinulla loistava idea uudeksi tekosyyksi tai lisämausteeksi?
+                Lähetä ehdotuksesi lomakkeen kautta!
+            </p>
+            <button id="ehdotus-btn" type="button" class="ehdotus-nappi">Ehdota tekosyytä</button>
+
+            <div class="ohjeet">
+                <h3>Vinkkejä hyvään tekosyyyn:</h3>
+                <ul>
+                    <li><strong>Syy:</strong> Kuvaa tapahtuma lyhyesti (esim. "kissa oksensi sänkyyn")</li>
+                    <li><strong>Lisämauste:</strong> Lisää komplikaatio joka alkaa "ja" tai "eikä" (esim. "ja puhelin oli tyhjä")</li>
+                    <li>Ole luova mutta uskottava</li>
+                    <li>Pidä se hauskana ja harmittomana</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tilastot -->
+        <div class="tilastot">
+            <p class="tilasto-teksti">
+                Tekosyitä tietokannassa: <strong id="syyt-maara">20</strong><br>
+                Lisämausteita: <strong id="lisamausteet-maara">15</strong>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.tekosyy-box {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e9ecef;
+}
+
+.tekosyy-text {
+    color: #333;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.generoi-nappi {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.generoi-nappi:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.generoi-nappi:active {
+    transform: translateY(0);
+}
+
+.generoi-nappi:focus {
+    outline: 3px solid #333;
+    outline-offset: 3px;
+}
+
+/* Ehdotus-osio */
+.ehdotus-osio {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid #e9ecef;
+}
+
+.ehdotus-osio h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.ehdotus-ohje {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.ehdotus-nappi {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+    margin-bottom: 25px;
+}
+
+.ehdotus-nappi:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+}
+
+.ehdotus-nappi:active {
+    transform: translateY(0);
+}
+
+.ehdotus-nappi:focus {
+    outline: 3px solid #333;
+    outline-offset: 3px;
+}
+
+/* Ohjeet */
+.ohjeet {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.ohjeet h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.ohjeet ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ohjeet li {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    padding-left: 25px;
+    position: relative;
+}
+
+.ohjeet li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Tilastot */
+.tilastot {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+.tilasto-teksti {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.tilasto-teksti strong {
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tekosyy-text {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    .ehdotus-osio h2 {
+        font-size: 1.5rem;
+    }
+
+    .ohjeet {
+        padding: 20px;
+    }
+}
+
+/* Vähennä animaatioita käyttäjän toivomuksesta */
+@media (prefers-reduced-motion: reduce) {
+    .tekosyy-text,
+    .generoi-nappi,
+    .ehdotus-nappi {
+        transition: none;
+    }
+    
+    .generoi-nappi:hover,
+    .ehdotus-nappi:hover {
+        transform: none;
+    }
+}
