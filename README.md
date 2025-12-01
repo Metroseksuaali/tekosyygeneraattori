@@ -1,10 +1,7 @@
 # Tekosyygeneraattori
 
-Hauska web-sovellus, joka generoi satunnaisia tekosyitä myöhästymisille ja muille tilanteille.
+Hauska web-sovellus, joka generoi satunnaisia tekosyitä.
 
-## Demo
-
-Avaa `index.html` selaimessa (vaatii web-palvelimen).
 
 ## Ominaisuudet
 
@@ -29,26 +26,11 @@ npx serve
 http://localhost:8000
 ```
 
-### Julkaisu
-
-**GitHub Pages / Netlify / Vercel:**
-- Vedä ja pudota tai linkitä repositoryyn
-- Valmis!
 
 ## Tekosyiden lisääminen
 
-Muokkaa `tekosyyt.json` tiedostoa:
+Voit joko tehdä githubiin issuen tai sitten lähettää ehdotuksesi nettisivuilla olevan google forms linkin kautta.  
 
-```json
-{
-  "syyt": [
-    "lisää uusi syy tähän"
-  ],
-  "lisamausteita": [
-    "ja lisää uusi lisämauste tähän"
-  ]
-}
-```
 
 ## Rakenne
 
@@ -59,16 +41,12 @@ tekosyygeneraattori/
 ├── script.js        # JavaScript-logiikka
 ├── tekosyyt.json    # Tekosyydata
 ├── LICENSE          # Käyttöoikeudet
-└── claude.md        # Yksityiskohtainen dokumentaatio
+
 ```
 
 ## Google Forms -integraatio
 
-Ehdotukset kerätään Google Formsin kautta. Päivitä oma lomakkeesi `script.js` tiedostoon:
-
-```javascript
-const lomakeUrl = 'https://forms.gle/SINUN-LINKKI';
-```
+**https://forms.gle/up6a8J6sTe4Qauvw5**
 
 ## Lisenssi
 
@@ -81,4 +59,3 @@ Katso [LICENSE](LICENSE) tiedosto. Julkinen hostaaminen ja kaupallinen käyttö 
 - JSON-pohjainen data
 - Saavutettava (ARIA)
 
-Katso [claude.md](claude.md) yksityiskohtaisempaa dokumentaatiota varten.
