@@ -5,26 +5,11 @@ Hauska web-sovellus, joka generoi satunnaisia tekosyitä.
 
 ## Ominaisuudet
 
-- 🎲 **157 erilaista tekosyytä** + 50 lisämaustetta
+
 - 💫 Satunnainen yhdistely luoviksi selityksiksi
 - 📝 Käyttäjät voivat ehdottaa uusia tekosyitä
 - 📊 Tilastot tekosyiden määrästä
 - 🎨 Moderni, responsiivinen design
-
-## Pikalähtö
-
-### Paikallinen testaus
-
-```bash
-# Python
-python -m http.server 8000
-
-# Node.js
-npx serve
-
-# Avaa selaimessa
-http://localhost:8000
-```
 
 
 ## Tekosyiden lisääminen
